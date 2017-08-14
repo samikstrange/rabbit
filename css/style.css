@@ -65,8 +65,7 @@ h3 {
 
 .main-navigation {
   float: right;
-  width: 550px;
-  padding: 22px 0 0 295px;
+  margin-top: 30px;
 }
 
 .main-navigation ul {
@@ -80,41 +79,15 @@ h3 {
   display: inline-block;
   vertical-align: top;
   margin-right: 70px;
+  margin-top: 40px;
 }
 
 .main-navigation li:last-child {
-  margin-right: 0;
+  margin-right: 10px;
 }
 
-.icons a {
-  display: block;
-  margin-bottom: 10px;
-  width: 50px;
-  height: 50px;
-  background: url(../img/menu-sprites.png) no-repeat center;
-}
-
-.icons .home {
-  background-position: -1px 3px;
-}
-
-.icons .about {
-  background-position: -54px 1px;
-}
-
-.icons .work {
-  background-position: -105px 4px;
-}
-
-.icons .blog {
-  background-position: -153px 7px;
-}
-
-.icons .contact {
-  background-position: -203px 8px;
-}
-
-.words a {
+.main-navigation a {
+  position: relative;
   display: block;
   font-size: 22px;
   line-height: 26px;
@@ -122,12 +95,45 @@ h3 {
   color: #9e9b9b;
 }
 
+.main-navigation a::before {
+  content: "";
+  width: 60px;
+  height: 55px;
+  position: absolute;
+  bottom: 100%;
+}
+
+.home a::before {
+  content: "";
+  background: url("../img/menu-sprites.png") no-repeat -3px;
+}
+
+.about a::before {
+  content: "";
+  background: url("../img/menu-sprites.png") no-repeat -92px;
+}
+
+.work a::before {
+  content: "";
+  background: url("../img/menu-sprites.png") no-repeat -206px 5px;
+}
+
+.blog a::before {
+  content: "";
+  background: url("../img/menu-sprites.png") no-repeat -305px 10px;
+}
+
+.contact a::before {
+  content: "";
+  background: url("../img/menu-sprites.png") no-repeat -382px 10px;
+}
+
 .bellow-header {
   height: 400px;
-  background-size: cover;
   background: url("../img/big-orange.jpg") no-repeat top center;
   border-top: 4px solid rgba(251, 156, 6, 0.7);
-  border-bottom: 4px solid #fb9c06;
+  border-bottom: 4px solid rgba(251, 156, 6, 1);
+  background-size: cover;
 }
 
 .bellow-header .questions {
@@ -160,28 +166,18 @@ h3 {
 }
 
 .features {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   box-shadow: 1px 1px 5px rgba(211, 210, 210, 0.75);
 }
 
 .features-item {
   float: left;
-  width: 261px;
-  min-height: 150px;
-  margin: 33px 39px 20px 0;
-}
-
-.features-item:first-child {
-  margin-left: 20px;
-}
-
-.features-item:last-child {
-  margin-right: 18px;
+  width: 260px;
+  padding: 28px 20px 24px 20px;
 }
 
 .features-item a {
   display: block;
-  width: 261px;
   font-size: 17px;
   font-weight: 400;
   font-style: italic;
@@ -192,7 +188,6 @@ h3 {
 
 .about-team h2,
 .message h2 {
-  width: 400px;
   margin: 0 auto 40px auto;
   font-size: 40px;
   font-weight: 700;
@@ -229,22 +224,18 @@ h3 {
 }
 
 .about-team-item p {
-  width: 263px;
-  min-height: 80px;
-  margin: 20px 0 48px 0;
-  padding-left: 30px;
+  margin-top: 20px;
+  padding: 0 13px 0 36px;
   text-align: left;
 }
 
 .main-field {
   float: left;
   margin-bottom: 50px;
-  line-height: 25px;
 }
 
 .field {
   text-align: right;
-  clear: both;
   margin-bottom: 37px;
 }
 
@@ -262,23 +253,26 @@ label {
   color: #fb9c06;
 }
 
-input {
-  width: 1070px;
+input,textarea {
+  min-width: 1065px;
   height: 33px;
+  padding-left: 7px;
   box-shadow: inset 5px 2px 0 rgba(198, 197, 197, 0.75);
+  border: none;
   background-color: #f7f6f5;
   opacity: 0.92;
 }
 
-input.message {
-  height: 90px;
+textarea {
+  height: 85px;
+  padding-top: 5px;
 }
 
 .btn {
   float: right;
-  width: 176px;
-  height: 45px;
-  margin-right: 33px;
+ 
+  margin-right: 30px;
+  padding: 5px 30px;
   font-size: 30px;
   font-weight: 100;
   font-family: "StMarie", "Times new roman", serif;
@@ -293,10 +287,14 @@ input.message {
 }
 
 .copyright p {
-  padding: 22px 0 22px 180px;
+  padding: 22px 0 22px 121px;
   color: #ffffff;
   font-family: "StMarie", "Times new roman", serif;
   font-size: 35px;
   font-weight: 100;
   text-transform: uppercase;
+}
+
+.about-team {
+  margin-bottom: 52px;
 }

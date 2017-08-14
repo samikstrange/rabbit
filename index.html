@@ -24,29 +24,12 @@
         </h1>
       </div>
       <nav class="main-navigation">
-        <ul class="icons">
-          <li>
-            <a class="home" href="#"></a>
-          </li>
-          <li>
-            <a class="about" href="#"></a>
-          </li>
-          <li>
-            <a class="work" href="#"></a>
-          </li>
-          <li>
-            <a class="blog" href="#"></a>
-          </li>
-          <li>
-            <a class="contact" href="#"></a>
-          </li>
-        </ul>
-        <ul class="words">
-          <li><a href="#">home</a></li>
-          <li><a href="#">about</a></li>
-          <li><a href="#">work</a></li>
-          <li><a href="#">blog</a></li>
-          <li><a href="#">contact</a></li>
+        <ul>
+          <li class="home"><a href="#">home</a></li>
+          <li class="about"><a href="#">about</a></li>
+          <li class="work"><a href="#">work</a></li>
+          <li class="blog"><a href="#">blog</a></li>
+          <li class="contact"><a href="#">contact</a></li>
         </ul>
 
       </nav>
@@ -108,7 +91,7 @@
       <div class="container clearfix">
         <h2>Send us a message...</h2>
         <form action="#" method="post">
-          <div class="main-field">
+          <div class="main-field clearfix">
             <div class="field">
               <label for="name">Name:</label>
               <input class="name" type="text" name="name" id="name">
@@ -119,7 +102,7 @@
             </div>
             <div class="field field-message">
               <label for="message">Message:</label>
-              <input class="message" type="text" name="message" id="message">
+              <textarea name="message" id="message"></textarea>
             </div>
             <button class="btn" type="submit">Submit</button>
           </div>
@@ -130,9 +113,11 @@
   </main>
 
   <footer class="page-footer">
+   <div class="container">
     <section class="copyright">
-      <p>COPYRIGHT ORANGE RABBIT - DESIGNED BY JAKE BHATT.</p>
+      <p>copyright orange rabbit - designed by jake bhatt.</p>
     </section>
+    </div>
   </footer>
 
 </body>
