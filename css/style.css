@@ -133,6 +133,10 @@ h3 {
   opacity: 0.6;
 }
 
+.main-navigation a:active {
+  color: #69655c;
+}
+
 .bellow-header {
   height: 400px;
   background: url("../img/big-orange.jpg") no-repeat top center;
@@ -191,13 +195,22 @@ h3 {
   color: #ffac00;
 }
 
+.features-item a:hover {
+  color: #724e08;
+}
+
+.features-item a:active {
+  color: #000000;
+}
+
+
 .about-team {
   margin-bottom: 52px;
 }
 
 .about-team h2,
 .message h2 {
-  margin-bottom: 40px;
+  margin-bottom: 48px;
   font-size: 40px;
   font-weight: 700;
   font-family: "StMarie", "Times new roman", serif;
@@ -281,7 +294,7 @@ textarea {
 .btn {
   float: right;
   margin-right: 30px;
-  padding: 5px 30px;
+  padding: 7px 33px;
   font-size: 30px;
   font-weight: 100;
   font-family: "StMarie", "Times new roman", serif;
@@ -292,6 +305,17 @@ textarea {
 
 .btn {
   cursor: pointer;
+}
+
+.btn:hover {
+  color: #724e08;
+  outline: 1px solid #6e6d6b;
+}
+
+.btn:active {
+  color: #ffffff;
+  font-weight: 700;
+  background: #612496;
 }
 
 .page-footer {
